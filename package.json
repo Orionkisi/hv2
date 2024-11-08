@@ -1,0 +1,33 @@
+{
+  "name": "vef1-2024-v6",
+  "version": "1.0.0",
+  "description": "Lausn á verkefni 6",
+  "main": "index.js",
+  "scripts": {
+    "browser-sync": "browser-sync start --server --files index.html styles.css",
+    "sass": "sass styles.scss styles.css",
+    "sass-watch": "sass --watch scss:css",
+    "dev": "concurrently npm:sass-watch npm:browser-sync",
+    "lint": "eslint ./src",
+    "copy:html": "cpy ./*.html ./build/",
+    "copy:css": "cpy ./*.css ./build/",
+    "copy:js": "cpy ./src ./build/src",
+    "build": "concurrently npm:copy:*",
+    "prettier": "prettier --write ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^3.0.3",
+    "concurrently": "^9.0.1",
+    "sass": "^1.79.4",
+    "stylelint": "^16.9.0",
+    "stylelint-config-sass-guidelines": "^12.1.0",
+    "stylelint-config-standard": "^36.0.1",
+    "@eslint/js": "^9.12.0",
+    "cpy-cli": "^5.0.0",
+    "eslint": "^9.12.0",
+    "globals": "^15.11.0",
+    "prettier": "^3.3.3"
+  }
+}
