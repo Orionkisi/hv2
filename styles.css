@@ -1,2 +1,6 @@
-@import './css/hiddencard.css'
+@import './css/hiddencard.css';
 
+main > ul:nth-of-type(2) {
+    background-color: lightcoral;
+    border: 5px solid #ddd;
+}
