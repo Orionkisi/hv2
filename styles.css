@@ -1,6 +1,39 @@
 @import './css/hiddencard.css';
 
-.quiz {
-    background-color: lightcoral;
-    border: 5px solid #ddd;
+body {
+    background-color: rgb(237, 234, 222)
+}
+
+header h1 {
+    margin-left: 5%;
+}
+
+main {
+    margin-top: 5%;
+}
+    
+  
+
+
+
+.quiz button {
+    width: 100%;
+}
+
+header ul {
+    text-align: center;
+}
+
+header ul li {
+    display: inline-block;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+header a {
+    padding: 10px;
+    border: 5px solid rgb(78, 77, 77);
+    background-color: rgb(137, 138, 137); 
+    text-decoration: none;
+    color: white;
 }
