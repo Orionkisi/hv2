@@ -1,0 +1,45 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+header h1 {
+    margin-left: 1%;
+}
+
+main {
+    margin-top: 5%;
+    
+}
+    
+main ul li {
+    padding: 10px;
+    border: 5px solid rgb(78, 77, 77);
+    background-color: rgb(137, 138, 137); 
+    text-decoration: none;
+    color: white;
+    width: 18%;
+}
+
+
+
+.quiz button {
+    width: 100%;
+}
+
+header ul {
+    text-align: center;
+}
+
+header ul li {
+    display: inline-block;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+header a {
+    padding: 10px;
+    border: 5px solid rgb(78, 77, 77);
+    background-color: rgb(137, 138, 137); 
+    text-decoration: none;
+    color: white;
+}
