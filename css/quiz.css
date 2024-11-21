@@ -1,82 +1,80 @@
 ul.quiz {
-    margin: 20px auto;
-    padding: 0;
-    list-style: none;
-    max-width: 800px;
-    border: 3px solid black;
-    border-radius: 5px;
-    background-color: #EDEADE;
+  margin: 20px auto;
+  padding: 0;
+  list-style: none;
+  max-width: 800px;
+  border: 3px solid black;
+  border-radius: 5px;
+  background-color: #edeade;
 }
 
 ul.quiz > li {
-    margin: 10px 0;
-    padding: 15px;
-    border-bottom: 1px solid crimson;
+  margin: 10px 0;
+  padding: 15px;
+  border-bottom: 1px solid crimson;
 }
 
 /* til þess að remove-a síðustu línuna með litnum "crimson" */
 ul.quiz > li:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 ul.quiz > li h1 {
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
 }
 
 ul.quiz > li section.answers {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 ul.quiz > li section.answers button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: white;
-    background-color: lightcoral;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: lightcoral;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 ul.quiz > li section.answers button:hover {
-    background-color: lightsalmon;
+  background-color: lightsalmon;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    padding: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
 }
 
 /* Styling for the pop-up feedback div */
 .quiz li > div {
-    background-color: #28a745; /* Green background for success */
-    color: #fff; /* White text color */
-    padding: 10px 15px;
-    border-radius: 5px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for a pop-up effect */
-    font-size: 1rem;
-    font-weight: bold;
-    text-align: center;
-    position: relative; /* Ensure it doesn’t affect surrounding elements */
-    margin-top: 10px; /* Space above the pop-up */
-    animation: fadeIn 0.3s ease-in-out; /* Add a fade-in effect */
+  background-color: #28a745; /* Green background for success */
+  color: #fff; /* White text color */
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for a pop-up effect */
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  position: relative; /* Ensure it doesn’t affect surrounding elements */
+  margin-top: 10px; /* Space above the pop-up */
+  animation: fadeIn 0.3s ease-in-out; /* Add a fade-in effect */
+}
+
+/* Adding animation for smooth entry */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
   }
-  
-  /* Adding animation for smooth entry */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: scale(0.95);
-    }
-    to {
-      opacity: 1;
-      transform: scale(1);
-    }
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
-  
-  
+}
