@@ -3,12 +3,33 @@ body {
 }
 
 header h1 {
-    margin-left: 1%;
+    margin-left: 42px;
+    margin-top: 50px;
+    color: rgb(201, 74, 201);
 }
 
 main {
-    margin-top: 5%;
+    margin-top: 8%;
     
+}
+
+main section p nav li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 5px solid rgb(78, 77, 77);
+    background-color: rgb(137, 138, 137); 
+    text-decoration: none;
+    color: white;
+    width: 18%;
+}
+
+main section p nav a {
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+    padding-right: 125px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
     
 main .subNavigation li {
@@ -20,8 +41,17 @@ main .subNavigation li {
     width: 18%;
 }
 
-.subNavigation li {
-    
+footer img {
+    margin-left: -110px;
+    margin-top: 30px;
+}
+
+.subNavigation li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    padding: 8px;
+    border: 2px solid rgb(78, 74, 74);
 }
 
 .quiz button {
@@ -29,13 +59,14 @@ main .subNavigation li {
 }
 
 header ul {
-    text-align: center;
+    margin-left: -55px;
+    margin-top: 80px;
 }
 
 header ul li {
     display: inline-block;
-    margin-right: 10%;
-    margin-left: 10%;
+    margin-right: 3%;
+    margin-left: 3%;
 }
 
 header a {
